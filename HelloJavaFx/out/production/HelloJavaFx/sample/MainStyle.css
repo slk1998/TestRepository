@@ -1,0 +1,18 @@
+#login{
+    -fx-outline-color:none;
+    -fx-background-color: #0a0a0a;
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+}
+#login:hover {
+    -fx-background-color: #0a0a0a;
+    -fx-text-fill: #FFFFFF;
+}
+
+#sign{
+    -fx-background-color: #0a0a0a;
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+}
+#sign:hover {
+    -fx-background-color: #0a0a0a;
+    -fx-text-fill: #FFFFFF;
+}
