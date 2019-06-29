@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--导入JavaFXML类-->
+
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--布局控件BorderPane，fx:controller属性用于声明事件处理的Controller，值为Controller类的类全名-->
+<!--xmlns用于声明默认命名空间，这里的声明随着你安装的Java JDK版本号的不同可以不同，但是最好不要比你安装的JDK版本高-->
+
+<?import java.net.URL?>
+
+<Pane minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="359.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#click" text="取消">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+        <!--声明一个Button元素，fx:id用于给该Button一个标示，用于和Controller类中的Button实例进行绑定-->
+        <Button fx:id="log" layoutX="254.0" layoutY="293.0" onMouseClicked="#Click" text="登录">
+            <!--这里我修改了Button默认的字体及其大小-->
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+      <Label fx:id="admin" layoutX="122.0" layoutY="175.0" prefHeight="20.0" prefWidth="70.0" text="用户名：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="212.0" prefHeight="20.0" prefWidth="70.0" text="密码：">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="198.0" layoutY="211.0" />
+      <TextField layoutX="198.0" layoutY="173.0" />
+      <ImageView  fx:id="image" fitHeight="135.0" fitWidth="172.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+      <Label alignment="CENTER" layoutX="170.0" layoutY="50.0" prefHeight="66.0" prefWidth="217.0" text="图书管理系统" textFill="#d02a2a">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="123.0" text="by 顿佳璇" textFill="#282e99">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="233.0" layoutY="256.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="161.0" text="我已阅读并同意相关协议" />
+      <Text fx:id="Signin" fill="#361515" layoutX="255.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="Signout" layoutX="254.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+</Pane>
