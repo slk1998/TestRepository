@@ -14,7 +14,7 @@ public class Menu extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("aplication.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("Aplication.fxml"));
         primaryStage.setTitle("数据库操作");
         primaryStage.setScene(new Scene(root,800,500));
         primaryStage.show();
