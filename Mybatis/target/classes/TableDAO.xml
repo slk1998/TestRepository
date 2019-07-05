@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper  namespace="helloMybatis.IStudentDao">
+    <resultMap id="stu" type="helloMybatis.Student">
+        <id column="学号" property="number"/>
+        <result column="姓名" property="name"/>
+        <result column="组别" property="group"/>
+        <result column="时段" property="time"/>
+        <result column="星期" property="week"/>
+        <result column="单双周" property="sureweek"/>
+
+    </resultMap>
+    <select id="getAll" resultType="helloMybatis.Student" resultMap="stu">
+        SELECT * FROM duty
+    </select>
+
+</mapper>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="surface.Controller">
+   <children>
+      <ImageView fx:id="image" fitHeight="191.0" fitWidth="221.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="300.0" layoutY="71.0" prefHeight="48.0" prefWidth="383.0" text="简单的信息管理系统" textFill="#282828" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Broadway" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="135.0" text="by顿佳璇" textFill="#1e1d1c" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="135.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox layoutX="146.0" layoutY="190.0" spacing="10.0" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="374.0" AnchorPane.topAnchor="190.0">
+         <children>
+            <Label layoutX="130.0" layoutY="190.0" prefHeight="33.0" prefWidth="80.0" text="用户名：" AnchorPane.bottomAnchor="243.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="190.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="236.0" text="密码：" AnchorPane.bottomAnchor="201.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="238.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="226.0" layoutY="197.0" spacing="15.0" AnchorPane.bottomAnchor="142.0" AnchorPane.leftAnchor="226.0" AnchorPane.rightAnchor="213.0" AnchorPane.topAnchor="197.0">
+         <children>
+            <TextField fx:id="textField" layoutX="226.0" layoutY="195.0" />
+            <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="238.0" AnchorPane.bottomAnchor="201.0" AnchorPane.leftAnchor="226.0" AnchorPane.rightAnchor="213.0" />
+         </children>
+      </VBox>
+      <HBox layoutX="280.0" layoutY="296.0" spacing="25.0" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="185.0" AnchorPane.topAnchor="320.0">
+         <children>
+            <Button layoutX="280.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="33.0" prefWidth="55.0" text="登录" />
+            <Button layoutX="367.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleRegistButtonAction" prefHeight="33.0" prefWidth="55.0" text="注册" />
+         </children>
+      </HBox>
+      <Text fx:id="showText" fill="#e10a0a" layoutX="302.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="207.54656982421875" AnchorPane.bottomAnchor="105.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+</AnchorPane>
