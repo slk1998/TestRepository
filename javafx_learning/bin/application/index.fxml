@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="474.0" prefWidth="465.0" 
+   xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+   fx:controller="application.Control">
+   <children>
+      <Button fx:id="copy" layoutX="314.0" layoutY="146.0" 
+      mnemonicParsing="false" text="mybutton" />
+      <TextField fx:id="inputtext" layoutX="89.0" layoutY="139.0" />
+      <TextField fx:id="out" layoutX="89.0" layoutY="222.0" />
+   </children>
+</AnchorPane>

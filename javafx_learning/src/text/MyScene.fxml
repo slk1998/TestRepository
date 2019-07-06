@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="554.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="text.MyController">
+   <children>
+      <TableView fx:id="tableview" layoutX="-7.0" prefHeight="497.0" prefWidth="520.0">
+        <columns>
+          <TableColumn fx:id="numcolumn" prefWidth="125.0" text="学号" />
+          <TableColumn fx:id="namecolumn" minWidth="0.0" prefWidth="94.0" text="姓名" />
+            <TableColumn fx:id="typecolumn" prefWidth="52.0" text="组别" />
+            <TableColumn fx:id="timecolumn" prefWidth="63.0" text="时段" />
+            <TableColumn fx:id="weekcolumn" prefWidth="78.0" text="单双周" />
+            <TableColumn fx:id="weektimecolumn" prefWidth="107.0" text="星期" />
+        </columns>
+      </TableView>
+      <Button layoutX="406.0" layoutY="510.0" mnemonicParsing="false" text="work" />
+   </children>
+</AnchorPane>

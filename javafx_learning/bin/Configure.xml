@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="User" type="User" ></typeAlias>
+	</typeAliases>
+	<environments default="development">
+	    <environment id="development">
+		<transactionManager type="JDBC" ></transactionManager>
+			<dataSource type="POOLED">  
+                            <property name="driver" value="com.mysql.jdbc.Driver" ></property>
+			    <property name="url" value="jdbc:mysql://q.yespace.xyz/class" ></property>
+			    <property name="username" value="elabtemp" ></property>
+			    <property name="password" value="elab123456" ></property>
+                       </dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+	     <!-- // power by http://www.yiibai.com -->
+	     <mapper resource="com/yiibai/mybatis/models/User.xml" ></mapper>
+	</mappers>
+</configuration>
+
