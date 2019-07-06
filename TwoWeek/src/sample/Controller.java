@@ -33,6 +33,8 @@ public class Controller {
     @FXML
     public TableColumn<User, String> day;
     public Label dataUpdated;
+    public Button insert;
+    public Button delete;
     @FXML
     private TableView<User> table;
 
@@ -103,5 +105,16 @@ public class Controller {
         ms.deleteAll();
         ms.insertAll(list);
         dataUpdated.setVisible(true);
+    }
+
+    public void insert(ActionEvent actionEvent) {
+        User user = new User();
+        list.add(user);
+        table.scrollTo(list.size());
+    }
+
+    public void delete(ActionEvent actionEvent) {
+        User user = table.getFocusModel().getFocusedItem();
+        list.remove(user);
     }
 }

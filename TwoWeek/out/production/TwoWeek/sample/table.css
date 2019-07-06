@@ -1,31 +1,12 @@
-#showAll {
-    -fx-border-radius: 10px;
-    -fx-background-color: black;
-    -fx-text-fill: #8f8f8f;
-    -fx-font-size: 15px;
-}
-
-#showAll:hover {
-    -fx-text-fill: #ffffff;
-    -fx-font-size: 15px;
-}
-
-#submit {
-    -fx-border-radius: 10px;
-    -fx-background-color: black;
-    -fx-text-fill: #8f8f8f;
-    -fx-font-size: 15px;
-}
-
-#submit:hover {
-    -fx-text-fill: #ffffff;
-    -fx-font-size: 15px;
-}
-
 #table {
     -fx-border-color: grey;
     -fx-border-width: 5px;
 }
+
+.menu.indexed-cell:hover {
+    -fx-background-color: #bababa;
+}
+
 
 .menu {
     -fx-background-color: #dfdfdf;
@@ -37,4 +18,16 @@
 .menu.indexed-cell {
     -fx-background-color: white;
     -fx-alignment: center;
+}
+
+.button {
+    -fx-border-radius: 10px;
+    -fx-background-color: black;
+    -fx-text-fill: #8f8f8f;
+    -fx-font-size: 15px;
+}
+
+.button:hover {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
 }
