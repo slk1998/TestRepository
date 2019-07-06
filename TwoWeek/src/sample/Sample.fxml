@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane prefHeight="597.0" prefWidth="788.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="showAll" layoutX="144.0" layoutY="531.0" mnemonicParsing="false" onAction="#show" prefHeight="41.0" prefWidth="145.0" text="查看所有学生信息">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button fx:id="submit" layoutX="479.0" layoutY="531.0" mnemonicParsing="false" onAction="#submit" prefHeight="41.0" prefWidth="145.0" text="提交修改">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Label layoutX="51.0" layoutY="7.0" prefHeight="52.0" prefWidth="166.0" text="测试表格">
+            <textFill>
+                <LinearGradient endX="0.7238095238095238" endY="0.7">
+                    <stops>
+                        <Stop color="#bf3333" />
+                        <Stop color="#5b5c68" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+            <font>
+                <Font size="41.0" />
+            </font>
+        </Label>
+        <TableView fx:id="table" editable="true" layoutX="17.0" layoutY="67.0" onMouseClicked="#initDataUpdated" prefHeight="438.0" prefWidth="755.0">
+            <columns>
+                <TableColumn fx:id="studentNumber" prefWidth="99.0" styleClass="menu" text="学号" />
+                <TableColumn fx:id="name" prefWidth="120.0" styleClass="menu" text="姓名" />
+                <TableColumn fx:id="group" prefWidth="113.0" styleClass="menu" text="组别" />
+                <TableColumn fx:id="timeZone" prefWidth="129.0" styleClass="menu" text="时段" />
+                <TableColumn fx:id="week" prefWidth="160.0" styleClass="menu" text="单双周" />
+                <TableColumn fx:id="day" prefWidth="133.0" styleClass="menu" text="星期" />
+            </columns>
+        </TableView>
+        <Label fx:id="dataUpdated" disable="true" layoutX="296.0" layoutY="507.0" prefHeight="24.0" prefWidth="197.0" text="DATA UPDATED!" visible="false">
+            <font>
+                <Font name="Copperplate Gothic Bold" size="20.0" />
+            </font>
+         <textFill>
+            <RadialGradient centerX="0.5222222222222223" centerY="0.47619047619047616" focusDistance="0.06976744186046502" radius="0.430232558139535">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#5300ff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+        </Label>
+      <Label layoutX="238.0" layoutY="45.0" prefHeight="15.0" prefWidth="58.0" text="by侯修全">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d1248d" />
+                  <Stop color="#1241e2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+    </children>
+</Pane>
