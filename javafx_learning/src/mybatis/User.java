@@ -13,44 +13,81 @@ public class User {
 	private User(String num,String name,String type,String time,String week,String weektime) {
 		this.num=new SimpleStringProperty(num);
 		this.name=new SimpleStringProperty(name);
-		this.time=new SimpleStringProperty(type);
+		this.type=new SimpleStringProperty(type);
+		this.time=new SimpleStringProperty(time);
 		this.week=new SimpleStringProperty(week);
 		this.weektime=new SimpleStringProperty(weektime);
 	}
-	public SimpleStringProperty getName() {
-		return name;
+
+	public String getNum() {
+		return num.get();
 	}
-	public void setName(SimpleStringProperty name) {
-		this.name = name;
-	}
-	public SimpleStringProperty getNum() {
+
+	public SimpleStringProperty numProperty() {
 		return num;
 	}
-	public void setNum(SimpleStringProperty num) {
-		this.num = num;
+
+	public void setNum(String num) {
+		this.num.set(num);
 	}
-	public SimpleStringProperty getTime() {
+
+	public String getName() {
+		return name.get();
+	}
+
+	public SimpleStringProperty nameProperty() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name.set(name);
+	}
+
+	public String getType() {
+		return type.get();
+	}
+
+	public SimpleStringProperty typeProperty() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type.set(type);
+	}
+
+	public String getTime() {
+		return time.get();
+	}
+
+	public SimpleStringProperty timeProperty() {
 		return time;
 	}
-	public void setTime(SimpleStringProperty time) {
-		this.time = time;
+
+	public void setTime(String time) {
+		this.time.set(time);
 	}
-	public SimpleStringProperty getType() {
-		return type;
-	}public void setType(SimpleStringProperty type) {
-		this.type = type;
+
+	public String getWeek() {
+		return week.get();
 	}
-	public SimpleStringProperty getWeek() {
+
+	public SimpleStringProperty weekProperty() {
 		return week;
 	}
-	public void setWeek(SimpleStringProperty week) {
-		this.week = week;
+
+	public void setWeek(String week) {
+		this.week.set(week);
 	}
-	public SimpleStringProperty getWeektime() {
+
+	public String getWeektime() {
+		return weektime.get();
+	}
+
+	public SimpleStringProperty weektimeProperty() {
 		return weektime;
 	}
-	public void setWeektime(SimpleStringProperty weektime) {
-		this.weektime = weektime;
+
+	public void setWeektime(String weektime) {
+		this.weektime.set(weektime);
 	}
-	
 }

@@ -47,25 +47,25 @@ public class MyController  {
 	@FXML
     public void initialize() throws Exception{
 
-        String resource = "config.xml";
+        String resource = "mybatis/config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sf = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession session = sf.openSession();
         user_interf mapper=session.getMapper(user_interf.class);
         
-        List<User> all=mapper.get_all()
+        List<User> all=mapper.get_all();
         ObservableList<User> data = FXCollections.observableArrayList(all);
 
 
-        nameColumn.setCellValueFactory(cellData -> cellData.getValue().nameProperty());
-        numberColumn.setCellValueFactory(cellData -> cellData.getValue().numberProperty());
-        groupColumn.setCellValueFactory(cellData -> cellData.getValue().groupProperty());
-        timeColumn.setCellValueFactory(cellData -> cellData.getValue().timeProperty());
-        sureweekColumn.setCellValueFactory(cellData -> cellData.getValue().sureweekProperty());
-        weekColumn.setCellValueFactory(cellData -> cellData.getValue().weekProperty());
+        numcolumn.setCellValueFactory(cellData -> cellData.getValue().numProperty());
+        namecolumn.setCellValueFactory(cellData -> cellData.getValue().nameProperty());
+        typecolumn.setCellValueFactory(cellData -> cellData.getValue().typeProperty());
+        timecolumn.setCellValueFactory(cellData -> cellData.getValue().timeProperty());
+        weekcolumn.setCellValueFactory(cellData -> cellData.getValue().weekProperty());
+        weektimecolumn.setCellValueFactory(cellData -> cellData.getValue().weektimeProperty());
 
-       
-        tableView.setItems(data);
+
+        tableview.setItems(data);
         session.commit();
        
         session.close();

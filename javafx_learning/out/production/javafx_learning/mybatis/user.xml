@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis.user_interf">
+	<select id="get_all"  resultType="mybatis.User"
+		resultMap="use">SELECT * FROM jy</select>
+	<resultMap type="mybatis.User" id="use">
+		<id column="学号" property="num"></id>
+		<result column="姓名" property="name" />
+		<result column="组别" property="type" />
+		<result column="时段" property="time" />
+		<result column="星期" property="weektime" />
+		<result column="单双周" property="week" ></result>
+		</resultMap>
+</mapper>
